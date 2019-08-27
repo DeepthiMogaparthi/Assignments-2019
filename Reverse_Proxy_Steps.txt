@@ -1,0 +1,49 @@
+1)update ubuntu
+--> sudo apt-get ubuntu
+--> sudo apt-get upgrade
+
+2) install apache2
+--> sudo apt-get install apache2
+
+3) install maven and java
+--> sudo apt-get install openjdk-8-jdk
+--> sudo apt-get install maven
+
+4) deploy an application on port (8090)
+--> mvn clean install
+--> cp target/project.war /var/lib/tomcat8/webapps
+
+5) The application is now deployed to port 8090
+
+6) install apache2 modules
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod proxy_ajp
+sudo a2enmod rewrite
+sudo a2enmod deflate
+sudo a2enmod headers
+sudo a2enmod proxy_balancer
+sudo a2enmod proxy_connect
+sudo a2enmod proxy_html
+
+7) Reload apache2
+--> service apache2 reload/restart
+
+8) open 000-default.conf in /etc/apache2/sites-available
+
+9) add the following lines:
+
+<VirtualHost *:80>
+  
+  ProxyPreserveHost On
+  ProxyRequests off
+  ProxyPass / http://35.240.218.59:8090/
+  ProxyPassReverse / ''http://35.240.218.59:8090/
+
+</VirtualHost>
+
+10) again reload the service
+--> service apache2 restart
+
+11) curl http://localhost:80/
+u can see the application executing on port 80 as well
