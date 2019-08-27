@@ -1,7 +1,7 @@
 form   => '#login_form',
 submit => '"button#u_0_3"',
 publicFormData => {
-  email    => '"XXXXXXXXXX',
+  email    => '"XXXXXXXXXX"',
   pass => '"XXXXXX"',
 },
 secretFormData => {
