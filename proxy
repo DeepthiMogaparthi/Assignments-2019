@@ -1,8 +1,8 @@
 form   => '#login_form',
 submit => '"button#u_0_3"',
 publicFormData => {
-  email    => '"8788518041"',
-  pass => '"deepthi"',
+  email    => '"XXXXXXXXXX',
+  pass => '"XXXXXX"',
 },
 secretFormData => {
   password => '"secret"',
