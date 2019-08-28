@@ -1,9 +1,10 @@
-form   => '#login_form',
-submit => '"button#u_0_3"',
+jQueryUrl => '//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js',
+form   => '"#login_form"',
+login   => '"button[type=submit]"',
 publicFormData => {
-  email    => '"XXXXXXXXXX"',
-  pass => '"XXXXXX"',
+   email => '$('#email').val('8788518041')',
+   pass  => '"deepthi"',
 },
 secretFormData => {
-  password => '"secret"',
+   pass => '"secret"',
 },
