@@ -1,6 +1,6 @@
 jQueryUrl => '//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js',
 form   => '"#login_form"',
-login   => '"button[type=submit]"',
+submit => '"button[type=submit]"',
 publicFormData => {
    email => '$('#email').val('8788518041')',
    pass  => '"deepthi"',
