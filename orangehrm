@@ -1,0 +1,9 @@
+jQueryUrl => 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
+submit => '"true"',
+publicFormData => {
+   txtUsername  => '"admin"',
+   txtPassword  => '"admin123"',
+},
+secretFormData => {
+   txtPassword => '"secret"',
+},
