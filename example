@@ -1,5 +1,6 @@
-jQueryUrl => 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
-submit => "true",
+jQueryUrl => 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
+submit => '"#submit"',
 publicFormData => {
   username    => '"admin"',
   password => '"admin"',
+}
